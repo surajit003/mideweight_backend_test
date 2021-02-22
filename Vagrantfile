@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
-  config.vm.network "forwarded_port", guest: 9090, host: 9090
-  config.vm.network "forwarded_port", guest: 6379, host: 6379
+  config.vm.network "forwarded_port", guest: 9099, host: 9099
+  config.vm.network "forwarded_port", guest: 5356, host: 5356
   config.vm.synced_folder ".", "/vagrant-test"
 
   config.vm.provider "virtualbox" do |vb|
